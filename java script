@@ -1,0 +1,23 @@
+var mobileBreakpoint = 600;
+
+window.onload =function(){
+    var screeenwidth = window.innerWidth;
+    var globalNavbar = document.getElementById("global-nav");
+   
+    if (scrrenwidth > mobileBreakpoint) {
+        globalNavbar.classlist.add("open");
+    }
+}
+window.onresize = function() {
+    var screeenwidth = window.innerWidth;
+    var globalNavbar = document.getElementById("global-nav");
+    var toggle = document.getElementById("menu-toggle")
+
+    if (scrrenwidth > mobileBreakpoint) {
+        globalNavbar.classlist.add("open");
+        toggle = document.classlist.add("open")
+    }
+    else {
+        globalNavbar.classlist.remove("open")
+    }
+}
