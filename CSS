@@ -1,0 +1,62 @@
+body {
+    font-size: 125%;
+    font-family: 'Roboto flex';
+}
+header, main, footer {
+    width: 40em;
+    max-width: 98%;
+    margin: 2em auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav#menu a {
+    text-decoration: none;
+    display: block;
+    padding: .5em 1em;
+    background-color: darkgrey;
+    width:100 ;
+    color: black;
+    border: 1px black;
+}
+nav#menu a:hover {
+    background-color: antiquewhite;
+}
+#menu-toggle div {
+    width: 50%;
+    height: 5px;
+    background-color: #101010;
+    margin: 4px auto;
+    transform: translateY(012px);
+}
+#menu-toggle:hover {
+    background-color: #999;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: blueviolet;
+}
+/* navbar toggle */
+#menu-toggle {
+    width: 2em;
+    height: 2em;
+    background-color: #999;
+    border-radius: 2em;
+    transition: all 0.3s;
+}
+@media only screen and (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+#menu-toggle {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    }
+}
